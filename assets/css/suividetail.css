@@ -121,4 +121,10 @@ table tr:hover {
     .dec-stats {
         flex-direction: column;
     }
+    .dec-stats div:first-child {
+        width: 100%;
+    }
+    .dec-stats div:last-child {
+        width: 100%;
+    }
 }
