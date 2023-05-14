@@ -78,6 +78,39 @@ main {
     overflow-x: scroll;
 }
 
+.dec-stats {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.dec-stats div:first-child {
+    width: 50%;
+    height: 100px;
+    background: rgb(60,202,38);
+    background: linear-gradient(90deg, rgba(60,202,38,1) 0%, rgba(246,152,7,1) 35%, rgba(252,92,5,1) 70%, rgba(251,39,4,1) 100%);
+    position: relative;
+    
+}
+.dec-stats div:first-child::before {
+    content: "X";
+  font-size: 2.3em;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.dec-stats div:last-child {
+    width: 50%;
+}
+
+table tr:hover {
+    background-color: #cccccc84;
+}
+
 @media screen and (max-width: 375px) {
     table {
         min-width: 500px;
@@ -85,5 +118,7 @@ main {
     main {
         margin-left: 5px;
     }
-    
+    .dec-stats {
+        flex-direction: column;
+    }
 }
