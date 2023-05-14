@@ -108,6 +108,7 @@ table a {
     font-weight: bold;
     border: 2px solid var(--light-blue);
     transition: all .2s ease-in-out;
+    text-decoration: none;
 }
 table a:hover {
     background-color: white;
